@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+.container {
+  font-family: "Sour Gummy", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 40px;
+  margin-top: 60px;
+  list-style-type: decimal;
+}
+
+.containerLi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerLiGrey {
+  background-color: rgba(240, 240, 240, 1);
+  width: 250px;
+  border-right: 1px solid rgba(17, 17, 17, 1);
+  padding: 12px;
+  height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.containerLiDarkGrey {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(17, 17, 17, 1);
+  width: 250px;
+  height: 40px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.containerLiDarkGreyText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.containerLi:not(:last-child) {
+  border-bottom: 1px solid rgba(17, 17, 17, 1);
+}
+
+.container li:first-child .containerLiGrey {
+  border-top-left-radius: 8px;
+}
+.container li:first-child .containerLiDarkGrey {
+  border-top-right-radius: 8px;
+}
+
+.container li:last-child .containerLiGrey {
+  border-bottom-left-radius: 8px;
+}
+
+.container li:last-child .containerLiDarkGrey {
+  border-bottom-right-radius: 8px;
+}
+
+.containerLiBtn {
+  border: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.containerLiBtn:hover {
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  transition: all 0.3s ease;
+}
+
+.tollTip {
+  display: none;
+}
+
+.containerLiGrey:hover {
+  .tollTip {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    padding: 8px 16px;
+    z-index: 1000;
+    display: block;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.1);
+    
+  }
+}
+
+.containerLiDarkGrey:hover {
+  .tollTip {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    padding: 8px 16px;
+    z-index: 1000;
+    display: block;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 600px) {
+  .containerLiGrey {
+    width: 172px;
+  }
+
+  .containerLiDarkGrey {
+    width: 172px;
+  }
+}
