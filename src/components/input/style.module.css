@@ -63,4 +63,8 @@ input:focus {
   .container {
     width: 328px;
   }
+
+  .containerBtn {
+    font-size: 14px;
+  }
 }

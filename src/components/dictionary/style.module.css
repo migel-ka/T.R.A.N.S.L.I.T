@@ -51,6 +51,7 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  align-items: center;
 }
 .containerLiGreyText {
   white-space: nowrap;
@@ -109,7 +110,6 @@
   position: absolute;
   background-color: white;
   color: black;
-  padding: 5px;
   border-radius: 3px;
   font-size: 14px;
   opacity: 1;
@@ -132,5 +132,9 @@
 
   .containerLiDarkGrey {
     width: 172px;
+  }
+
+  .tooltip {
+    padding: 5px 10px;
   }
 }
