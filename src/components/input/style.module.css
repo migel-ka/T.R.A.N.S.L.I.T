@@ -8,7 +8,10 @@ input {
   line-height: 23.4px;
   letter-spacing: -0.05em;
   text-align: left;
+  -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
+  margin-left: 28px;
+  caret-color: rgba(17, 17, 17, 1);
 }
 
 input:focus {
@@ -16,8 +19,14 @@ input:focus {
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border: 2px solid rgba(17, 17, 17, 1);
   max-width: 500px;
@@ -37,6 +46,7 @@ input:focus {
   font-weight: 400;
   line-height: 23.4px;
   letter-spacing: -0.03em;
+  -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
 }
 
@@ -44,6 +54,8 @@ input:focus {
   color: rgba(17, 17, 17, 1);
   background-color: rgba(255, 255, 255, 1);
   border: 1px solid rgba(17, 17, 17, 1);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
