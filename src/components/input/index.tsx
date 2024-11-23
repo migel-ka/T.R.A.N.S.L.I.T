@@ -49,6 +49,7 @@ function Input() {
         <input
           ref={inputRef}
           type="text"
+          maxLength={35}
           placeholder="Начните вводить текст"
           value={inputValue}
           onChange={handleInputChange}
